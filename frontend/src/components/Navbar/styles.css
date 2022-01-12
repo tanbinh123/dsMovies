@@ -18,6 +18,10 @@ header {
   font-weight: 700;
 }
 
+.cinema {
+  margin-top: 50px;
+}
+
 .dsmovie-contact-container {
   display: flex;
   align-items: center;
