@@ -8,10 +8,7 @@ import javax.persistence.ManyToOne;
 
 @Embeddable
 public class ScorePK implements Serializable {
-	
-	/**
-	 Ele pede essa formatacao ja que se tratava de uma tabela intermediaria 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
 	@ManyToOne
