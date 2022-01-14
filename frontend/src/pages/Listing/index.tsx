@@ -1,9 +1,31 @@
+import axios from "axios";
 import MovieCard from "components/MovieCard";
 import Pagination from "components/Pagination";
+import { useEffect, useState } from "react";
+import { MoviePage } from "types/movie";
+import { BASE_URL } from "utils/requests";
 
 function Listing() {
+
+  const [pageNumber, setPageNumber] = useState(0);
+  useEffect(() => {
+    axios.get(`${BASE_URL}/movies?size=12&page=0`)
+      .then(response => {
+        const data = response.data as MoviePage;
+        console.log(data)
+        setPageNumber(data.number)
+      })
+  }, [])
+
+  //Forma errada que me retorna 2 vez a requisicao ou seja para previnir esse tipo de comportamento preciso trabalhar com os hooks(use states) do react
+  // axios.get(`${BASE_URL}/movies?size=12&page=0`)
+  //   .then(response => {
+  //     console.log(response.data)
+  //   })
+
   return (
     <>
+      <p>{pageNumber}</p>
       <Pagination />
       <div className="container">
         <div className="row">
