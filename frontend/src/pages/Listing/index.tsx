@@ -37,9 +37,14 @@ function Listing() {
   //     console.log(response.data)
   //   })
 
+  //o Pagination eh quem vai chamar essa funcao
+  const handlePageChange = (newPageNumber: number) => {
+    setPageNumber(newPageNumber);
+  }
+
   return (
     <>
-      <Pagination />
+      <Pagination page={page} onChange={handlePageChange} />
       <div className="container">
         <div className="row">
           {page.content.map(movie => (
