@@ -9,10 +9,10 @@
 
 ## Make sure to star and fork before you clone it
 
-<img src="f"/>
+<img src="https://github.com/limatainer/dsMovies/blob/main/list.png"/>
 </br>
 </br>
-<img src="f"/>
+<img src="https://github.com/limatainer/dsMovies/blob/main/form.png"/>
 
 ## Fique a vontade :) Be my guest
 
