@@ -10,7 +10,7 @@ type Props = {
 
 function MovieCard({ movie }: Props) {
   return (
-    <div>
+    <div className="container">
       <img className="dsmovie-movie-card-image" src={movie.image} alt={movie.title} />
       <div className="dsmovie-card-bottom-container">
         <br />
@@ -20,6 +20,7 @@ function MovieCard({ movie }: Props) {
           <div className="btn btn-primary dsmovie-btn">Avaliar</div>
         </Link>
       </div>
+      <br />
     </div >
   )
 }
